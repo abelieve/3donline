@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* // 代码整理：聚合分享 www.juheweb.com
+*/
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+}
+/* body {
+	font:12px/180% Arial, Helvetica, sans-serif, Microsoft YaHei;
+} */
+/* tabshow */
+.tabshow {
+    height:785px;
+	position:relative;
+}
+
+.tabshow .tabTagBox {
+	height:auto;
+	width:auto;
+	position:relative;
+	z-index:9;
+	margin:300px 0;
+	background-color: #fbfbfb;
+	
+}
+.tabshow .tabTagBox .tabTagList {
+	position:relative;
+	left:0;
+    width:102px;
+	height:auto;
+	border:1px solid #d4d4d4;
+	border-radius:4px;
+	padding:0 10px;
+	color:#848484;
+}
+
+.tabshow .hide {
+	display:none;
+}
+.tabshow .tabTagBox .tabTagList li a:hover{
+	text-decoration: none;
+    color:#ff2702;
+}
+.tabshow .tabTagBox li {
+	text-align:center;
+	width:78px;
+	height:auto;
+	font-size:1.5em;
+	line-height:3em;
+	cursor:pointer;
+	border-bottom:1px solid #d4d4d4;
+}
+
+.tabshow .tabTagBox li:last-child{
+	border-bottom:none;
+}
+.tabshow .tabcon {
+	position:absolute;
+	z-index:1;
+	background:white;
+	height:auto;
+	width:auto;
+	overflow:hidden;
+}
+
+.tabshow .tabcon li {
+	float:left;
+	width:49%;
+	height:auto;
+	overflow:hidden;
+	margin-top:20px;
+	display:inline-block;
+}
+
+.tabshow .tabcon li:nth-of-type(even){
+	margin-left:2%;
+}
+/*.tabshow .tabcon li .pic {*/
+	/*display:block;*/
+	/*width:100%;*/
+/*}*/
+.tabshow .tabcon li img{
+    display:block;
+    width:100%;
+}
+.tabshow .tabcon li .pic:hover {
+
+}
+@media screen and (max-width: 1441px){
+.tabshow{
+    height:580px;
+    position:relative;
+    }
+.tabshow .tabTagBox .tabTagList {
+    width:75px;
+	padding:0 6px;
+}
+.tabshow .tabTagBox li {
+	width:60px;
+	font-size:1.2em;
+	line-height:3em;
+}
+}

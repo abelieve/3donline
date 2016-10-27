@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <title>新在线商城首页</title>
+</head>
+<body>
+    <!--头部banner-->
+    <div class="top">
+        <div class="top-content">
+            <p class="content-l"> 您好，欢迎来到3D打印在线 <a href="#"> 【登录】 </a><a href="#"> 【注册】 </a></p>
+            <div class="content-r">
+                <ul>
+                    <li>
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li>
+                        <a href="#">我的收藏</a>
+                    </li>
+                    <li>
+                        <a href="#">客户服务</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--logo搜索框区域-->
+    <div class="top-logo">
+        <img src="images/logo.png" height="75" width="auto">
+        <div class="scan-main">
+            <!-- <div class="scan">
+            <p><button class="btn-pro">商品<span class="caret"></span></button><input class="frame-sear" type="search" placeholder="查找您需要的商品"><input type="submit" value="搜索" class="btn-sear"></p>
+            </div> -->
+			<form action="#">
+				<select class="a">
+				<option value="">商品</option>
+				<option value="">耗材</option>
+				</select>
+				<input class="b" type="text" placeholder=" 查找您需要的商品">
+				<button type="submit" class="c"><i class="icon iconfont">&#xe627;</i>搜索</button>
+			</form>
+            <span class="text">热门搜索：<a href="#">桌面级3D打印机</a> <a href="#">ABS</a><a href="#"> 打印材料 </a> <a href="#">打印机配件</a></span>
+        </div>
+        <div class="user-info">
+            <p><a href="#"><i class="icon iconfont">&#xe643;</i> 我的商城 <i class="icon iconfont">&#xe652;</i> </a><a href="#"><i class="icon iconfont">&#xe6c7;</i> 购物车结算 <i class="icon iconfont">&#xe652;</i></a></p>
+        </div>
+    </div>
+    <!--导航菜单-->
+    <div class="mid">
+        <div class="banner">
+			<div class="banner-content">
+			<!--<nav class="navbar navbar-default" role="navigation">-->
+				<!--&lt;!&ndash; <div class="container-fluid"> &ndash;&gt;-->
+				<!---->
+				<!--<ul class="nav navbar-nav" style="font-size:18px;">-->
+
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+						<!--所有商品分类-->
+						<!--<b class="caret"></b>-->
+					<!--</a>-->
+					<!--<ul class="dropdown-menu">-->
+						<!--<li><a href="#">3D打印设备</a></li>-->
+						<!--<li><a href="#">3D打印材料</a></li>-->
+						<!--<li><a href="#">3D打印机配件</a></li>-->
+						<!--<li><a href="#">3D打印软件及教材</a></li>-->
+						<!--<li><a href="#">3D打印应用产品</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">资讯</a></li>-->
+                        <!--<li><a href="#">服务</a></li>-->
+                <!--</ul>-->
+				<!--</li>-->
+				<!--<li class="active"><a href="#">首页</a></li>-->
+				<!--<li><a href="#">3D打印商城</a></li>-->
+				<!--<li><a href="#">信息资讯频道</a></li>-->
+				<!--<li><a href="#">个性化定制频道</a></li>-->
+				<!--<li><a href="#">加工服务频道</a></li>-->
+				<!--</ul>-->
+				<!--&lt;!&ndash; </div> &ndash;&gt;-->
+			<!--</nav>-->
+                <ul>
+                    <li id="nav-drop">
+                        <a href="#"> 所有商品分类  &nbsp;<i class="icon iconfont">&#xe652;</i> </a>
+                        <ul class="sub-menu">
+                            <li><a href="#"> <i class="icon iconfont">&#xe69a;</i> 3D打印设备</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe603;</i> 3D打印材料</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe60f;</i> 3D打印机配件</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe65b;</i> 3D打印软件及教材</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe72a;</i> 3D打印应用产品</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe605;</i>  资讯</a></li>
+                            <li><a href="#"> <i class="icon iconfont">&#xe62d;</i>  服务</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">3D打印商城</a></li>
+                    <li><a href="#">信息资讯频道</a></li>
+                    <li><a href="#">个性化定制频道</a></li>
+                    <li><a href="#">加工服务频道</a></li>
+
+                </ul>
+			</div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#nav-drop').hover(function() {
+                    $(this).find('.sub-menu').css('display', 'block');
+                }, function() {
+                    $(this).find('.sub-menu').css('display', 'none');
+                });
+            });
+        </script>
+        <!-- 抽奖区域 -->
+        <div class="prize">
+            <div class="prize-con">
+                <div class="circle">
+                    <div class="g-lottery-box">
+                    <div class="g-lottery-img">
+                    </div>
+                    <a class="playbtn" href="javascript:;" title="开始抽奖"></a>
+                    </div>
+                </div>
+                <div class="introduce">
+                <img src="images/introduce.png">
+                </div>
+            </div>
+        </div>
+        <!--商品信息区域-->
+        <div class="product">
+            <div class="product-l">
+                <div class="tabshow">
+                    <div class="tabTagBox">
+                        <ul class="tabTagList">
+                            <!--<li id="tag01" class="current">桌面级</li>-->
+                            <!--<li id="tag02">工业级</li>-->
+                            <!--<li id="tag03">扫描仪</li>-->
+                            <!--<li id="tag04">耗材</li>-->
+                            <!--<li id="tag05">解决方案</li>-->
+                            <li><a href="#">桌面级</a></li>
+                            <li><a href="#">工业级</a></li>
+                            <li><a href="#">扫描仪</a></li>
+                            <li><a href="#">耗材</a></li>
+                            <li><a href="#">解决方案</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-m">
+                <div class="product-tit">
+                    <h2>3D打印机品牌</h2>
+                </div>
+                <div class="tabshow">
+                    <div class="tabcon" style="z-index:99">
+                        <ul>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/1.jpg" alt=""></a></li>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/3.jpg" alt=""></a></li>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/4.jpg" alt=""></a></li>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/5.jpg" alt=""></a></li>
+                            <li><a class="pic" href="#" target="_blank"><img src="images/6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="tabcon">-->
+                        <!--<ul>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="tabcon">-->
+                        <!--<ul>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/3.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="tabcon">-->
+                        <!--<ul>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/4.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="tabcon">-->
+                        <!--<ul>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/3.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/4.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/5.jpg" alt=""></a></li>-->
+                            <!--<li><a class="pic" href="#" target="_blank"><img src="images/6.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                </div>
+
+                <div class="box-1">
+                    <div class="product-tit">
+                        <h2>3D打印机耗材</h2>
+                    </div>
+                    <ul>
+                        <li><a  href="#" target="_blank"><img src="images/7.jpg" alt=""></a></li>
+                        <li><a  href="#" target="_blank"><img src="images/8.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-r">
+
+                <ul>
+                    <li><a  href="#" target="_blank"><img id="image" src="images/9.jpg" alt=""></a></li>
+                    <li><a  href="#" target="_blank"><img id="image1" src="images/10.jpg" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="null"></div>
+    <div class="foot">
+        <div class="foot-content">
+            <div class="content-top">
+            <div class="content-list">
+                <h3>帮助中心</h3>
+                <ul>
+                    <li><a href="#">如何注册成为会员</a></li>
+                    <li><a href="#">积分细则</a></li>
+                    <li><a href="#">积分兑换说明</a></li>
+                    <li><a href="#">如何搜索</a></li>
+                    <li><a href="#">忘记密码</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h3>店主之家</h3>
+                <ul>
+                    <li><a href="#">如何管理店铺</a></li>
+                    <li><a href="#">查看售出商品</a></li>
+                    <li><a href="#">如何发货</a></li>
+                    <li><a href="#">商城产品推荐</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h3>支付方式</h3>
+                <ul>
+                    <li><a href="#">分期付款</a></li>
+                    <li><a href="#">邮局汇款</a></li>
+                    <li><a href="#">公司转账</a></li>
+                    <li><a href="#">如何注册支付宝</a></li>
+                    <li><a href="#">在线支付</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h3>售后服务</h3>
+                <ul>
+                    <li><a href="#">联系卖家</a></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">退换货流程</a></li>
+                    <li><a href="#">商品发布</a></li>
+                    <li><a href="#">修改收货地址</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h3>客服中心</h3>
+                <ul>
+                    <li><a href="#">会员修改密码</a></li>
+                    <li><a href="#">会员修改个人资料</a></li>
+                    <li><a href="#">商品发布</a></li>
+                    <li><a href="#">修改收货地址</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="#">合作及洽谈</a></li>
+                    <li><a href="#">招聘英才</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">关于3D打印在线</a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+        <div class="content-b">
+            <a href="#">首页</a> | <a href="#">招聘英才</a> | <a href="#">合作及洽谈</a> | <a href="#">联系我们</a> | <a href="#">关于3D打印在线</a>
+        </div>
+
+    </div>
+<script>
+    $(function() {
+        var $btn = $('.playbtn');
+        var $circle = $('.g-lottery-img');
+        var playnum = 1; //初始次数，由后台传入
+        $('.playnum').html(playnum);
+        var isture = 0;
+        var clickfunc = function() {
+            var data = [1,3,6,8];    //根据传入的数据调整概率
+            //data为随机出来的结果，根据概率后的结果
+            data = data[Math.floor(Math.random() * data.length)];
+            switch(data) {
+                case 1:
+                    rotateFunc(1, 0, '恭喜您获得2000元优惠券!');
+                    break;
+                case 2:
+                    rotateFunc(2, 45, '恭喜您获得耗材一卷!');
+                    break;
+                case 3:
+                    rotateFunc(3, 90, '恭喜您获得华为mate8!');
+                    break;
+                case 4:
+                    rotateFunc(4, 135, '恭喜您获得500元!');
+                    break;
+                case 5:
+                    rotateFunc(5, 180, '恭喜您获得耗材一卷!');
+                    break;
+                case 6:
+                    rotateFunc(6, 225, '恭喜您获得1000元优惠券!');
+                    break;
+                case 7:
+                    rotateFunc(7, 270, '恭喜您获得200元优惠券!');
+                    break;
+                case 8:
+                    rotateFunc(8, 315, '谢谢参与！');
+                    break;
+            }
+        }
+        $btn.click(function() {
+            if(isture) return; // 如果在执行就退出
+            isture = true; // 标志为 在执行
+            //先判断是否登录,未登录则执行下面的函数
+            if(1==2) {
+                $('.playnum').html('0');
+                alertMsg("请先登录",0,"温馨提示！");
+                isture = false;
+            } else { //登录了就执行下面
+                if(playnum <= 0) { //当抽奖次数为0的时候执行
+                    alertMsg("没有次数了",0,"糟糕！");
+                    $('.playnum').html(0);
+                    isture = false;
+                } else { //还有次数就执行
+                    playnum = playnum - 1;//执行转盘了则次数减1
+                    if(playnum <= 0) {
+                        playnum = 0;
+                    }
+                    $('.playnum').html(playnum);
+                    clickfunc();
+                }
+            }
+        });
+        var rotateFunc = function(awards, angle, content) {
+            isture = true;
+            $circle.stopRotate();
+            $circle.rotate({
+                angle: 0,
+                duration: 4000, //旋转时间
+                animateTo: angle + 1440, //让它根据得出来的结果加上1440度旋转
+                callback: function() {
+                    isture = false; // 标志为 执行完毕
+                    if(content=='谢谢参与！') {
+                        alertMsg(content, 0, "很遗憾！");
+                    }else{
+                        alertMsg(content, 1, "恭喜！");
+                    }
+                }
+            });
+        };
+    });
+
+</script>
+</body>
+</html>
